@@ -64,6 +64,3 @@ mvn clean test
 3. Ver resultados:
 - Reportes Surefire: target/surefire-reports/
 - Reportes Karate: target/karate-reports/karate-summary.html
-
-✅ Validación de Resultados
-![image](https://raw.githubusercontent.com/Daianatk/ServerestKarate/refs/heads/main/summary-karate.png))
