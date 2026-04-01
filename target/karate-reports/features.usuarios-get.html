@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"75fd2cb9-88c3-4372-8e78-006a929bf0cd",karate_version:"1.4.0",karate_meta:null});
+  }
+});
+</script>
+
+    <title>features.usuarios-get</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2026-04-01 08:35:57 a. m.</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:3]"><span>[1:3]</span> <span>Obtener lista de usuarios</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">features/usuarios-get.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Listar usuarios</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:3]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:3]</span>
+                <span class="scenario-name">Obtener lista de usuarios</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>719</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref passed">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://serverest.dev/usuarios&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref passed">5</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">711</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">08:35:56.788 request:
+1 &gt; GET https://serverest.dev/usuarios
+1 &gt; Host: serverest.dev
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+08:35:57.480 response time in milliseconds: 670
+1 &lt; 200
+1 &lt; access-control-allow-origin: *
+1 &lt; x-dns-prefetch-control: off
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; strict-transport-security: max-age=15552000; includeSubDomains
+1 &lt; x-download-options: noopen
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-xss-protection: 1; mode=block
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; x-cloud-trace-context: c517bda000334117f637c3d81b54f076
+1 &lt; date: Wed, 01 Apr 2026 13:35:57 GMT
+1 &lt; server: Google Frontend
+1 &lt; Content-Length: 26300
+{
+    &quot;quantidade&quot;: 120,
+    &quot;usuarios&quot;: [
+        {
+            &quot;nome&quot;: &quot;DaianaC&quot;,
+            &quot;email&quot;: &quot;dcampos@test.com&quot;,
+            &quot;password&quot;: &quot;123456&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;0RyPANPFT8dHK6KL&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Oscar da Silva&quot;,
+            &quot;email&quot;: &quot;oscar.s@qa.com.pe&quot;,
+            &quot;password&quot;: &quot;teste&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;0uxuPY0cbmQhpEz1&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;QA User 6074&quot;,
+            &quot;email&quot;: &quot;qa.user.6074@mail.com&quot;,
+            &quot;password&quot;: &quot;Teste@123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;0wis1ljU3OLAGMLt&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Hora do QA&quot;,
+            &quot;email&quot;: &quot;horadoqa_1775050011381@qa.com&quot;,
+            &quot;password&quot;: &quot;1q2w3e4r&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;1vg11nsKLQXwr3AU&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;QA User 5406&quot;,
+            &quot;email&quot;: &quot;qa.user.5406@mail.com&quot;,
+            &quot;password&quot;: &quot;Teste@123&quot;,
+            &quot;administrador&quot;: &quot;false&quot;,
+            &quot;_id&quot;: &quot;2C7kqKtVD6jTsKhq&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;QA User 9277&quot;,
+            &quot;email&quot;: &quot;qa.user.9277@mail.com&quot;,
+            &quot;password&quot;: &quot;Teste@123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;2KYdKv3bVNXHK8VX&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;QA User 5374&quot;,
+            &quot;email&quot;: &quot;qa.user.5374@mail.com&quot;,
+            &quot;password&quot;: &quot;Teste@123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;2Q6B3x2w9pYd3Xzx&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;QA User 8001&quot;,
+            &quot;email&quot;: &quot;qa.user.8001@mail.com&quot;,
+            &quot;password&quot;: &quot;Teste@123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;2XRojBQLdwedgoja&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;AllyTeste&quot;,
+            &quot;email&quot;: &quot;allytoken2@qa.com&quot;,
+            &quot;password&quot;: &quot;teste&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;2vAWKO6tzLdjYdoS&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Joan Sauer&quot;,
+            &quot;email&quot;: &quot;joansauer@test.com&quot;,
+            &quot;password&quot;: &quot;Test;123&quot;,
+            &quot;administrador&quot;: &quot;false&quot;,
+            &quot;_id&quot;: &quot;2yRk0t2z5cdfVgTY&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Hora do QA&quot;,
+            &quot;email&quot;: &quot;horadoqa_1775049319184@qa.com&quot;,
+            &quot;password&quot;: &quot;1q2w3e4r&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;3Mi1toNxOXlWWiL4&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Admin Produtos&quot;,
+            &quot;email&quot;: &quot;admin_produtos_1775047481731@qa.com&quot;,
+            &quot;password&quot;: &quot;123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;3btGa7UvGJFB4ZLz&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;QA User 1681&quot;,
+            &quot;email&quot;: &quot;qa.user.1681@mail.com&quot;,
+            &quot;password&quot;: &quot;Teste@123&quot;,
+            &quot;administrador&quot;: &quot;false&quot;,
+            &quot;_id&quot;: &quot;42U6SNB3MyMdZ6uH&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Usuario Teste Cypress&quot;,
+            &quot;email&quot;: &quot;cypress_1775048402280@teste.com&quot;,
+            &quot;password&quot;: &quot;123456&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;4LqqT1JJE3m2RuZ2&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Allyteste&quot;,
+            &quot;email&quot;: &quot;allytoken@qa.com&quot;,
+            &quot;password&quot;: &quot;teste&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;4LxIDUWJEvbtAcVr&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;SandraM&quot;,
+            &quot;email&quot;: &quot;sandra.m@test.com&quot;,
+            &quot;password&quot;: &quot;tests123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;517iyMqzGqwjnbtC&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Admin Lista Produtos&quot;,
+            &quot;email&quot;: &quot;admin_list_prod_1775047781001@qa.com&quot;,
+            &quot;password&quot;: &quot;123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;5MpUlVGeLJ4Xh9Wa&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Hora do QA&quot;,
+            &quot;email&quot;: &quot;horadoqa_1775047739516@qa.com.br&quot;,
+            &quot;password&quot;: &quot;1q2w3e4r&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;5T83dJag9e69RIEA&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Usuario Login 40177&quot;,
+            &quot;email&quot;: &quot;usuario40177@qa.com.br&quot;,
+            &quot;password&quot;: &quot;teste1&quot;,
+            &quot;administrador&quot;: &quot;false&quot;,
+            &quot;_id&quot;: &quot;6wjgGn6bDV1K479y&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;guizin sfadin&quot;,
+            &quot;email&quot;: &quot;guizinsafadin@qa.com.br&quot;,
+            &quot;password&quot;: &quot;pegui0101&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;7isNdjXiGnZ2Mptf&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Admin Lista Produtos&quot;,
+            &quot;email&quot;: &quot;admin_list_prod_1775047780996@qa.com&quot;,
+            &quot;password&quot;: &quot;123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;7kI3bg8NQwPRs6O5&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Fulano da Silva&quot;,
+            &quot;email&quot;: &quot;cavalonegro@qa.com.br&quot;,
+            &quot;password&quot;: &quot;teste&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;8QTNTTzw0lsieHDa&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Hora do QA&quot;,
+            &quot;email&quot;: &quot;horadoqa_1775049777836@qa.com&quot;,
+            &quot;password&quot;: &quot;1q2w3e4r&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;8sMTrb145SiUxmBv&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Hora do QA&quot;,
+            &quot;email&quot;: &quot;horadoqa_1775047808980@qa.com.br&quot;,
+            &quot;password&quot;: &quot;1q2w3e4r&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;9E0nlNuF53BU1DvC&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;paola&quot;,
+            &quot;email&quot;: &quot;paolaysimoso@gmail.com&quot;,
+            &quot;password&quot;: &quot;pays2506&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;9QLSfksF9HVdMmKI&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Hora do QA&quot;,
+            &quot;email&quot;: &quot;horadoqa_1775047794934@qa.com.br&quot;,
+            &quot;password&quot;: &quot;1q2w3e4r&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;9VohTSjLpOIyOrWK&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;QA User 7695&quot;,
+            &quot;email&quot;: &quot;qa.user.7695@mail.com&quot;,
+            &quot;password&quot;: &quot;Teste@123&quot;,
+            &quot;administrador&quot;: &quot;false&quot;,
+            &quot;_id&quot;: &quot;9kfpLEQHoLLzOYj1&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Hora do QA&quot;,
+            &quot;email&quot;: &quot;horadoqa_1775049773591@qa.com&quot;,
+            &quot;password&quot;: &quot;1q2w3e4r&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;CBHgRIGJnOXrPtwi&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Patti Wyman MD&quot;,
+            &quot;email&quot;: &quot;pattiwymanmd84@serverest.dev&quot;,
+            &quot;password&quot;: &quot;AQaslAa9g18Y&quot;,
+            &quot;administrador&quot;: &quot;false&quot;,
+            &quot;_id&quot;: &quot;CHzb4FsfhngYQt7X&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Admin Produtos&quot;,
+            &quot;email&quot;: &quot;admin_produtos_1775046930089@qa.com&quot;,
+            &quot;password&quot;: &quot;123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;CbcQbi92LMHGmIxO&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Admin Produtos&quot;,
+            &quot;email&quot;: &quot;admin_produtos_1775047131330@qa.com&quot;,
+            &quot;password&quot;: &quot;123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;DQXPuKPAu5hzzkFr&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Hora do QA&quot;,
+            &quot;email&quot;: &quot;horadoqa1775037911636@qa.com.br&quot;,
+            &quot;password&quot;: &quot;horadoqa&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;EQe42k8N4fuUmadi&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Hora do QA&quot;,
+            &quot;email&quot;: &quot;horadoqa_1775047743871@qa.com.br&quot;,
+            &quot;password&quot;: &quot;1q2w3e4r&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;FlAhgxfUUJt22WWr&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Admin Produtos&quot;,
+            &quot;email&quot;: &quot;admin_produtos_1775047481703@qa.com&quot;,
+            &quot;password&quot;: &quot;123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;GHlfzTquFyKsvFCl&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Ernest Littel III&quot;,
+            &quot;email&quot;: &quot;ernestlitteliii@test.com&quot;,
+            &quot;password&quot;: &quot;Test;123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;GZFj4BkSj81bQxUa&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Usuário Teste&quot;,
+            &quot;email&quot;: &quot;test_1775037796609@example.com&quot;,
+            &quot;password&quot;: &quot;senha123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;GsQKmXGoFh4UKZy2&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Fulano da Silva&quot;,
+            &quot;email&quot;: &quot;fulano@qa.com.br&quot;,
+            &quot;password&quot;: &quot;teste&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;HUBdOMMRaL0FY75v&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Hora do QA&quot;,
+            &quot;email&quot;: &quot;horadoqa_1775049770225@qa.com&quot;,
+            &quot;password&quot;: &quot;1q2w3e4r&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;HcizZeBSzHqtcUVc&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Hora do QA&quot;,
+            &quot;email&quot;: &quot;horadoqa_1775047780002@qa.com.br&quot;,
+            &quot;password&quot;: &quot;1q2w3e4r&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;ILDvbejp1WKitSEK&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Hora do QA&quot;,
+            &quot;email&quot;: &quot;horadoqa_1775049314966@qa.com&quot;,
+            &quot;password&quot;: &quot;1q2w3e4r&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;Iv6p6ncxavlNnz9S&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;QA User 7751&quot;,
+            &quot;email&quot;: &quot;qa.user.7751@mail.com&quot;,
+            &quot;password&quot;: &quot;Teste@123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;JA9Du51CihA8Zec1&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;maria aduarda&quot;,
+            &quot;email&quot;: &quot;mariaeduardaquintino@gmail.com&quot;,
+            &quot;password&quot;: &quot;Mariaduda123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;KEqwg28xOdkL1g6R&quot;
+        },
+        {
+            &quot;nome&quot;: &quot; da Silbryanva&quot;,
+            &quot;email&quot;: &quot;bryan@qa.com.br&quot;,
+            &quot;password&quot;: &quot;teste&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;LDGjAYwnjWRTRgyE&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Evan Reilly MD&quot;,
+            &quot;email&quot;: &quot;evanreillymd_Simonis@serverest.dev&quot;,
+            &quot;password&quot;: &quot;_UWysECi0c9y&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;M1kPRjj4wirvDkcC&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Hora do QA&quot;,
+            &quot;email&quot;: &quot;horadoqa_1775047767020@qa.com.br&quot;,
+            &quot;password&quot;: &quot;1q2w3e4r&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;MEl6HsEOLrto8G0j&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Hora do QA&quot;,
+            &quot;email&quot;: &quot;horadoqa_1775049098974@qa.com&quot;,
+            &quot;password&quot;: &quot;1q2w3e4r&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;NMofjTqglCztSAMM&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Hora do QA&quot;,
+            &quot;email&quot;: &quot;horadoqa_1775047786174@qa.com.br&quot;,
+            &quot;password&quot;: &quot;1q2w3e4r&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;NdZn8qvPp6Fp4v7B&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Hora do QA&quot;,
+            &quot;email&quot;: &quot;horadoqa_1775047797237@qa.com.br&quot;,
+            &quot;password&quot;: &quot;1q2w3e4r&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;NkvZ3fkRpAAiXok4&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Hora do QA&quot;,
+            &quot;email&quot;: &quot;horadoqa_1775049980322@qa.com&quot;,
+            &quot;password&quot;: &quot;1q2w3e4r&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;NqAUgZwriamPTLz9&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;QA User 2885&quot;,
+            &quot;email&quot;: &quot;qa.user.2885@mail.com&quot;,
+            &quot;password&quot;: &quot;Teste@123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;O3sR2dP4IupMJmMa&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Admin Produtos&quot;,
+            &quot;email&quot;: &quot;admin_produtos_1775046930093@qa.com&quot;,
+            &quot;password&quot;: &quot;123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;OSrG6OUODdiB4mqM&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Hora do QA&quot;,
+            &quot;email&quot;: &quot;horadoqa_1775048898525@qa.com&quot;,
+            &quot;password&quot;: &quot;1q2w3e4r&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;POADXDdNskoNdveu&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Admin 1775037797710&quot;,
+            &quot;email&quot;: &quot;admin_1775037797710@example.com&quot;,
+            &quot;password&quot;: &quot;senha123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;PfIlRIIZrX2jViSW&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Admin Produtos&quot;,
+            &quot;email&quot;: &quot;admin_produtos_1775047025513@qa.com&quot;,
+            &quot;password&quot;: &quot;123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;QJE7r4gh0ETRA4S0&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;QA User 7366&quot;,
+            &quot;email&quot;: &quot;qa.user.7366@mail.com&quot;,
+            &quot;password&quot;: &quot;Teste@123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;QKJOCbG3SnNBfMx1&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Hora do QA&quot;,
+            &quot;email&quot;: &quot;horadoqa_1775047800617@qa.com.br&quot;,
+            &quot;password&quot;: &quot;1q2w3e4r&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;SiaoJuIudox6tMIm&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Dayhanna QA&quot;,
+            &quot;email&quot;: &quot;dayhanna.qa@test.com&quot;,
+            &quot;password&quot;: &quot;123456&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;SmUV3CR9cztDdfRG&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Mateus&quot;,
+            &quot;email&quot;: &quot;camilo1234@qa.com.br&quot;,
+            &quot;password&quot;: &quot;teste&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;SqUBxtKl60wZWBeD&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Fulano da Silva&quot;,
+            &quot;email&quot;: &quot;beltrano@qaaaaaaa.cosm.br&quot;,
+            &quot;password&quot;: &quot;teste&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;Sv5OVSQCLcOySU1O&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Allyteste&quot;,
+            &quot;email&quot;: &quot;naoautorizado@qa.com&quot;,
+            &quot;password&quot;: &quot;teste&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;Te6UXrq19iD51G2R&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Teste&quot;,
+            &quot;email&quot;: &quot;teste_1775047806541@qa.com&quot;,
+            &quot;password&quot;: &quot;123456&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;UItBekztIQT9APdz&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Sonia Bartoletti&quot;,
+            &quot;email&quot;: &quot;soniabartoletti@test.com&quot;,
+            &quot;password&quot;: &quot;Test;123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;WQmGYvuS0v24cslB&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Hora do QA&quot;,
+            &quot;email&quot;: &quot;horadoqa_1775047788197@qa.com.br&quot;,
+            &quot;password&quot;: &quot;1q2w3e4r&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;X7yvonuU7W0vT9Kj&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Fulano da Silva&quot;,
+            &quot;email&quot;: &quot;beltrano@qa.com.br&quot;,
+            &quot;password&quot;: &quot;teste&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;XBnphabSGhnWLbP3&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Hora do QA&quot;,
+            &quot;email&quot;: &quot;horadoqa_1775047753682@qa.com.br&quot;,
+            &quot;password&quot;: &quot;1q2w3e4r&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;YsMbbZkcBvbmsbtX&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Hora do QA&quot;,
+            &quot;email&quot;: &quot;horadoqa_1775047792288@qa.com.br&quot;,
+            &quot;password&quot;: &quot;1q2w3e4r&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;ZN9XUJ29yE8JSQtS&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Admin Produtos&quot;,
+            &quot;email&quot;: &quot;admin_produtos_1775047068564@qa.com&quot;,
+            &quot;password&quot;: &quot;123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;ZXzeIt3AfsNeQZHj&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Admin Blindado&quot;,
+            &quot;email&quot;: &quot;admin_sessao_1775045871483@qa.com&quot;,
+            &quot;password&quot;: &quot;123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;ZZrhWNKPtvWkSDBJ&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Drew Turner V&quot;,
+            &quot;email&quot;: &quot;drewturnerv.Johns@serverest.dev&quot;,
+            &quot;password&quot;: &quot;jc4LLe4Frnst&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;b57NDMVdDuqTnbHj&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Hora do QA&quot;,
+            &quot;email&quot;: &quot;horadoqa@qa.com.br&quot;,
+            &quot;password&quot;: &quot;horadoqa&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;b8H1mMUW3kZ61aEH&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;luana&quot;,
+            &quot;email&quot;: &quot;luanabridif@gmail.com&quot;,
+            &quot;password&quot;: &quot;010203lu&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;bVCPxVN5zGKpitNe&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;CRUD Test 1775037799205&quot;,
+            &quot;email&quot;: &quot;crud_1775037799205@example.com&quot;,
+            &quot;password&quot;: &quot;senha123&quot;,
+            &quot;administrador&quot;: &quot;false&quot;,
+            &quot;_id&quot;: &quot;bXW9jb47YHEUZ192&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Merle Flatley&quot;,
+            &quot;email&quot;: &quot;blakeskiles@test.com&quot;,
+            &quot;password&quot;: &quot;Test;123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;cPMszeR7h4rpv94s&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Cesar da Silva&quot;,
+            &quot;email&quot;: &quot;cesar.s@qa.com.pe&quot;,
+            &quot;password&quot;: &quot;testear123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;cQhhMajz5khwRDwZ&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Pedros&quot;,
+            &quot;email&quot;: &quot;pedroscobras@qa.com.br&quot;,
+            &quot;password&quot;: &quot;pedros&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;cuzQ2Ph4ZuOFCbFr&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Rodriadm&quot;,
+            &quot;email&quot;: &quot;rodrigoadmin@teste.com&quot;,
+            &quot;password&quot;: &quot;123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;cwiBWqNqckkUECjf&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Hora do QA&quot;,
+            &quot;email&quot;: &quot;horadoqa_1775049722890@qa.com&quot;,
+            &quot;password&quot;: &quot;1q2w3e4r&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;emJ8HABmDyq5rlGN&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Hora do QA&quot;,
+            &quot;email&quot;: &quot;horadoqa_1775047762199@qa.com.br&quot;,
+            &quot;password&quot;: &quot;1q2w3e4r&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;fTqrUWEKjIeHJtHA&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Mateus&quot;,
+            &quot;email&quot;: &quot;camilo12@qa.com.br&quot;,
+            &quot;password&quot;: &quot;teste&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;g2bsmwBE47Z0vhbx&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Admin Blindado&quot;,
+            &quot;email&quot;: &quot;admin_sessao_1775045871482@qa.com&quot;,
+            &quot;password&quot;: &quot;123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;gQ9ZHBuFujXqFHG2&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Caterina&quot;,
+            &quot;email&quot;: &quot;phil.hane@yahoo.com&quot;,
+            &quot;password&quot;: &quot;ur2twntj738xat&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;hIKRlvWLrZH8aOnW&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Hora do QA&quot;,
+            &quot;email&quot;: &quot;horadoqa_1775047735685@qa.com.br&quot;,
+            &quot;password&quot;: &quot;1q2w3e4r&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;hYX7NdgBgd0NULdC&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Usuario Listagem&quot;,
+            &quot;email&quot;: &quot;para_listagem_1775045879058@qa.com&quot;,
+            &quot;password&quot;: &quot;senha&quot;,
+            &quot;administrador&quot;: &quot;false&quot;,
+            &quot;_id&quot;: &quot;hdFGWydMsJIoSmGZ&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Hora do QA&quot;,
+            &quot;email&quot;: &quot;horadoqa_1775050001940@qa.com&quot;,
+            &quot;password&quot;: &quot;1q2w3e4r&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;hppCVz0V6wywf414&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Cesar da Silva&quot;,
+            &quot;email&quot;: &quot;cesar.s@qa.com.br&quot;,
+            &quot;password&quot;: &quot;654321&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;i6tFeiv9cV8pr9LR&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Hugh Deckow V&quot;,
+            &quot;email&quot;: &quot;hughdeckowv.Wilderman45@serverest.dev&quot;,
+            &quot;password&quot;: &quot;EwwoC5s2pz5v&quot;,
+            &quot;administrador&quot;: &quot;false&quot;,
+            &quot;_id&quot;: &quot;l8P7zz0LxIA44J2v&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Hora do QA&quot;,
+            &quot;email&quot;: &quot;horadoqa_1775050005742@qa.com&quot;,
+            &quot;password&quot;: &quot;1q2w3e4r&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;lfEm7ckp7nmTIwGu&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Hora do QA&quot;,
+            &quot;email&quot;: &quot;horadoqa_1775047764399@qa.com.br&quot;,
+            &quot;password&quot;: &quot;1q2w3e4r&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;m0jZ9BsPsxzLbq4H&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Jackie Ratke&quot;,
+            &quot;email&quot;: &quot;jackieratke@test.com&quot;,
+            &quot;password&quot;: &quot;Test;123&quot;,
+            &quot;administrador&quot;: &quot;false&quot;,
+            &quot;_id&quot;: &quot;mgl8nZTRQvWz40IE&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Hora do QA&quot;,
+            &quot;email&quot;: &quot;horadoqa_1775047759572@qa.com.br&quot;,
+            &quot;password&quot;: &quot;1q2w3e4r&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;nxNwgWqKZDgjTgGe&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Hora do QA&quot;,
+            &quot;email&quot;: &quot;horadoqa_1775047746653@qa.com.br&quot;,
+            &quot;password&quot;: &quot;1q2w3e4r&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;o8R1qMBPborPX0RS&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Hora do QA&quot;,
+            &quot;email&quot;: &quot;horadoqa_1775049318199@qa.com&quot;,
+            &quot;password&quot;: &quot;1q2w3e4r&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;oaVGlWDLdKi7VcJ9&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Hora do QA&quot;,
+            &quot;email&quot;: &quot;horadoqa_1775047742208@qa.com.br&quot;,
+            &quot;password&quot;: &quot;1q2w3e4r&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;ozIGPkCdVmrIL3Fj&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Hora do QA&quot;,
+            &quot;email&quot;: &quot;horadoqa_1775047768957@qa.com.br&quot;,
+            &quot;password&quot;: &quot;1q2w3e4r&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;pWtIWY0BwgYjG6em&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;QA User 6320&quot;,
+            &quot;email&quot;: &quot;qa.user.6320@mail.com&quot;,
+            &quot;password&quot;: &quot;Teste@123&quot;,
+            &quot;administrador&quot;: &quot;false&quot;,
+            &quot;_id&quot;: &quot;rdE0XDR8yd2vZqfq&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Fannie Glover&quot;,
+            &quot;email&quot;: &quot;fannieglover@test.com&quot;,
+            &quot;password&quot;: &quot;Test;123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;rxuneyP1bW8Kn9mr&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Hora do QA&quot;,
+            &quot;email&quot;: &quot;horadoqa_1775047737364@qa.com.br&quot;,
+            &quot;password&quot;: &quot;1q2w3e4r&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;sRDPAcsddLUNemDv&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Cesar da Silva&quot;,
+            &quot;email&quot;: &quot;cesar-s@qa.com.br&quot;,
+            &quot;password&quot;: &quot;teste&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;sRGYgLJwAtv9HJyL&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Usuario Teste Cypress&quot;,
+            &quot;email&quot;: &quot;cypress_1775048346566@teste.com&quot;,
+            &quot;password&quot;: &quot;123456&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;snC1Et0WyrFKFzyt&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Admin Produtos&quot;,
+            &quot;email&quot;: &quot;admin_produtos_1775046930090@qa.com&quot;,
+            &quot;password&quot;: &quot;123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;tRgEYXSkXZbds2EU&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Hora do QA&quot;,
+            &quot;email&quot;: &quot;horadoqa1775037913690@qa.com.br&quot;,
+            &quot;password&quot;: &quot;horadoqa&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;tepwoKRwqbaChoUE&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Margie Keebler&quot;,
+            &quot;email&quot;: &quot;margiekeebler@test.com&quot;,
+            &quot;password&quot;: &quot;Test;123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;uHqbaFgOBYiwWqmk&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;QA User 8548&quot;,
+            &quot;email&quot;: &quot;qa.user.8548@mail.com&quot;,
+            &quot;password&quot;: &quot;Teste@123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;uPLYPD0Ue2eYh0Yc&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;QA User 1486&quot;,
+            &quot;email&quot;: &quot;qa.user.1486@mail.com&quot;,
+            &quot;password&quot;: &quot;Teste@123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;uQlhknSKLumCeZ7C&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;QA User 8680&quot;,
+            &quot;email&quot;: &quot;qa.user.8680@mail.com&quot;,
+            &quot;password&quot;: &quot;Teste@123&quot;,
+            &quot;administrador&quot;: &quot;false&quot;,
+            &quot;_id&quot;: &quot;uWEof9o959BijL7b&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;jorge&quot;,
+            &quot;email&quot;: &quot;lordjorge2200@qa.com.br&quot;,
+            &quot;password&quot;: &quot;teste&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;ubz0rtr7mY95yBxD&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;stephany marques&quot;,
+            &quot;email&quot;: &quot;stemarqueslilinegouai@gmail.com&quot;,
+            &quot;password&quot;: &quot;luke08steh12&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;v2Hvvzaffd2o5sf6&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Hora do QA&quot;,
+            &quot;email&quot;: &quot;horadoqa_1775049095265@qa.com&quot;,
+            &quot;password&quot;: &quot;1q2w3e4r&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;v4VrarxpJZ0AnErW&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Teste&quot;,
+            &quot;email&quot;: &quot;teste_1775047751603@qa.com&quot;,
+            &quot;password&quot;: &quot;123456&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;vRXA0WD67jzp4Uph&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Hora do QA&quot;,
+            &quot;email&quot;: &quot;horadoqa_1775047772176@qa.com.br&quot;,
+            &quot;password&quot;: &quot;1q2w3e4r&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;vhimk7zVKdJ2gspq&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Hora do QA&quot;,
+            &quot;email&quot;: &quot;horadoqa_1775048894819@qa.com&quot;,
+            &quot;password&quot;: &quot;1q2w3e4r&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;vjuG6GhSU1mfkHRF&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Admin Produtos&quot;,
+            &quot;email&quot;: &quot;admin_produtos_1775047466560@qa.com&quot;,
+            &quot;password&quot;: &quot;123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;wYBTcY9PhtgL0Kl5&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Outro Usuário&quot;,
+            &quot;email&quot;: &quot;duplicate_1775037798698@example.com&quot;,
+            &quot;password&quot;: &quot;senha123&quot;,
+            &quot;administrador&quot;: &quot;false&quot;,
+            &quot;_id&quot;: &quot;wo6LaH8H7MTVQRBk&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;mumu&quot;,
+            &quot;email&quot;: &quot;sophiamelo@gmail.com&quot;,
+            &quot;password&quot;: &quot;mumu&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;wxlFtMxuVHpM8me9&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Novo Usuário&quot;,
+            &quot;email&quot;: &quot;new_user_1775037798814@example.com&quot;,
+            &quot;password&quot;: &quot;senha123&quot;,
+            &quot;administrador&quot;: &quot;false&quot;,
+            &quot;_id&quot;: &quot;xMmm36CEKFDUqv5e&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Aline Lancelotti&quot;,
+            &quot;email&quot;: &quot;alinevitoria2365@qa.com.br&quot;,
+            &quot;password&quot;: &quot;ds4lin3_&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;yCMTKnlXQeiCdpLb&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;QA User 9072&quot;,
+            &quot;email&quot;: &quot;qa.user.9072@mail.com&quot;,
+            &quot;password&quot;: &quot;Teste@123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;yGGNoUV4skzUXoSc&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Teste&quot;,
+            &quot;email&quot;: &quot;teste_1775047777660@qa.com&quot;,
+            &quot;password&quot;: &quot;123456&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;ymm5mLVIx8KRSB9v&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Margaret_Upton52&quot;,
+            &quot;email&quot;: &quot;Tevin.Dibbert@hotmail.com&quot;,
+            &quot;password&quot;: &quot;469991512&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;z3RX4o8ZwwARLeTz&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;DayhannaC&quot;,
+            &quot;email&quot;: &quot;dayhanna.c@test.com&quot;,
+            &quot;password&quot;: &quot;123456&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;zNYW1ePHAykgKOu6&quot;
+        }
+    ]
+}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref passed">6</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.usuarios == &#39;#[]&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
