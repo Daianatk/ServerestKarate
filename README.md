@@ -66,4 +66,4 @@ mvn clean test
 - Reportes Karate: target/karate-reports/karate-summary.html
 
 ✅ Validación de Resultados
-![image](https://github.com/Daianatk/ServerestKarate/blob/main/summary-karate.png)
+![image](https://raw.githubusercontent.com/Daianatk/ServerestKarate/refs/heads/main/summary-karate.png))
