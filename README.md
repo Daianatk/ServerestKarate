@@ -59,7 +59,7 @@ git clone https://github.com/Daianatk/ServerestKarate.git
 cd qa-serverest-karate
 
 2. Ejecutar las pruebas:
-mvn clean test
+mvn test
 
 3. Ver resultados:
 - Reportes Surefire: target/surefire-reports/
