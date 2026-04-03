@@ -41,8 +41,10 @@ qa-serverest-karate/
  └── target/
      ├── surefire-reports/
      └── karate-reports/
+```
 
-📊 Casos Cubiertos
+## 📊 Casos Cubiertos
+
 GET /usuarios → Listar usuarios.
 
 POST /usuarios → Registrar usuario válido.
@@ -53,7 +55,7 @@ PUT /usuarios/{id} → Actualizar datos de usuario existente.
 
 DELETE /usuarios/{id} → Eliminar usuario (si no tiene carrito asociado).
 
-▶️ Ejecución
+## ▶️ Ejecución
 1. Clonar el repositorio:
 git clone https://github.com/Daianatk/ServerestKarate.git
 cd qa-serverest-karate
