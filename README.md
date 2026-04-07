@@ -59,7 +59,7 @@ DELETE /usuarios/{id} → Eliminar usuario (si no tiene carrito asociado).
 1. Clonar el repositorio:
 git clone https://github.com/Daianatk/ServerestKarate.git
 
-cd qa-serverest-karate
+   cd qa-serverest-karate
 
 3. Ejecutar las pruebas:
 mvn test
